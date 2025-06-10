@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Descubre los destinos turísticos más impresionantes del Perú">
+  <meta name="author" content="Maritza Lisbhet García Carrasco">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>Viaja Perú</title>
+</head>
+<body>
+  <header>
+    <h1>Bienvenidos a Viaja Perú</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="destinos.html">Destinos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Explora el Perú</h2>
+
+    <!-- Imagen principal responsive -->
+    <picture>
+      <source media="(min-width: 768px)" srcset="img/machu.jpg">
+      <img src="img/laguna.png" alt="Imagen de Perú" class="img-principal">
+    </picture>
+
+    <!-- Mapa interactivo con image map -->
+    <figure>
+      <img src="img/laguna.png" usemap="#mapaPeru" alt="Mapa del Perú" class="mapa">
+      <map name="mapaPeru">
+        <area shape="rect" coords="60,100,150,180" href="destinos.html#machu" alt="Machu Picchu" title="Machu Picchu">
+        <area shape="circle" coords="250,200,30" href="destinos.html#paracas" alt="Paracas" title="Paracas">
+        <!-- Puedes agregar más áreas si conoces las coordenadas -->
+      </map>
+      <figcaption>Haz clic en las zonas para explorar los destinos.</figcaption>
+    </figure>
+
+    <!-- Ícono SVG decorativo -->
+    <object type="image/svg+xml" data="svg/llama.svg" class="svg-icon" aria-label="Ícono de llama"></object>
+  </section>
+</body>
+</html>
